@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+   <session-factory>
+   	   <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+   	   <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hibernatefirstproject2</property>
+   	   <property name="hibernate.connection.username">root</property>
+   	   <property name="hibernate.connection.password">240302</property>
+
+
+
+    	
+   	  <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+   	  <property name="hibernate.show_sql">true</property>
+   	  <property name="hibernate.hbm2ddl.auto">update</property>
+   	  <mapping class = "com.Project.Address"></mapping>
+   	  <mapping class = "com.Project.AddressType"></mapping>
+   	  <mapping class = "com.Project.Category"></mapping>
+   	  <mapping class = "com.Project.Customer"></mapping>
+   	  <mapping class = "com.Project.Order"></mapping>
+   	  <mapping class = "com.Project.OrderDetail"></mapping>
+   	  <mapping class = "com.Project.OrderStatus"></mapping>
+   	  <mapping class = "com.Project.Payment"></mapping>
+   	  <mapping class = "com.Project.Person"></mapping>
+   	  <mapping class = "com.Project.Product"></mapping>
+   	  <mapping class = "DataInsersion.AddressUploader"></mapping>
+   	  <mapping class = "DataInsersion.CategoryDataUploader"></mapping>
+   	  <mapping class = "DataInsersion.CustomerDataUploader"></mapping>
+   	  <mapping class = "DataInsersion.InsertProduct"></mapping>
+   	  <mapping class = "DataInsersion.OrderDetailDataUploader"></mapping>
+   	  <mapping class = "DataInsersion.OrderInsertionExample"></mapping>
+   	  <mapping class = "DataInsersion.PaymentInsertionExample"></mapping>
+   	  
+   	  
+   	  
+
+   </session-factory>
+</hibernate-configuration>
